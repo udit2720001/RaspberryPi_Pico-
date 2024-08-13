@@ -1,0 +1,289 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "HeaderChecker",
+        "importPath": "common.header_checker",
+        "description": "common.header_checker",
+        "isExtraImport": true,
+        "detail": "common.header_checker",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "peekOfCode": "def main():\n    parser = HeaderChecker.configArgParser()\n    args   = parser.parse_args()\n    # Configure the checks then run\n    checker = HeaderChecker(KERNEL_HEADER,\n                            copyright_regex=FREERTOS_COPYRIGHT_REGEX,\n                            ignored_files=KERNEL_IGNORED_FILES,\n                            ignored_ext=KERNEL_IGNORED_EXTENSIONS,\n                            ignored_patterns=KERNEL_IGNORED_PATTERNS,\n                            third_party_patterns=KERNEL_THIRD_PARTY_PATTERNS,",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "documentation": {}
+    },
+    {
+        "label": "KERNEL_IGNORED_FILES",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "peekOfCode": "KERNEL_IGNORED_FILES = [\n    'FreeRTOS-openocd.c',\n    'Makefile',\n    '.DS_Store',\n    'cspell.config.yaml',\n    '.clang-format'\n]\nKERNEL_IGNORED_EXTENSIONS = [\n    '.yml',\n    '.css',",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "documentation": {}
+    },
+    {
+        "label": "KERNEL_IGNORED_EXTENSIONS",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "peekOfCode": "KERNEL_IGNORED_EXTENSIONS = [\n    '.yml',\n    '.css',\n    '.idx',\n    '.md',\n    '.url',\n    '.sty',\n    '.0-rc2',\n    '.s82',\n    '.js',",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "documentation": {}
+    },
+    {
+        "label": "KERNEL_ASM_EXTENSIONS",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "peekOfCode": "KERNEL_ASM_EXTENSIONS = [\n    '.s',\n    '.S',\n    '.src',\n    '.inc',\n    '.s26',\n    '.s43',\n    '.s79',\n    '.s85',\n    '.s87',",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "documentation": {}
+    },
+    {
+        "label": "KERNEL_PY_EXTENSIONS",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "peekOfCode": "KERNEL_PY_EXTENSIONS = [\n    '.py'\n]\nKERNEL_IGNORED_PATTERNS = [\n    r'.*\\.git.*',\n    r'.*portable/IAR/AtmelSAM7S64/.*AT91SAM7.*',\n    r'.*portable/GCC/ARM7_AT91SAM7S/.*',\n    r'.*portable/MPLAB/PIC18F/stdio.h',\n    r'.*portable/ThirdParty/xClang/XCOREAI/*',\n    r'.*IAR/ARM_C*',",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "documentation": {}
+    },
+    {
+        "label": "KERNEL_IGNORED_PATTERNS",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "peekOfCode": "KERNEL_IGNORED_PATTERNS = [\n    r'.*\\.git.*',\n    r'.*portable/IAR/AtmelSAM7S64/.*AT91SAM7.*',\n    r'.*portable/GCC/ARM7_AT91SAM7S/.*',\n    r'.*portable/MPLAB/PIC18F/stdio.h',\n    r'.*portable/ThirdParty/xClang/XCOREAI/*',\n    r'.*IAR/ARM_C*',\n    r'.*IAR/78K0R/*',\n    r'.*CCS/MSP430X/*',\n    r'.*portable/template/*',",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "documentation": {}
+    },
+    {
+        "label": "KERNEL_THIRD_PARTY_PATTERNS",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "peekOfCode": "KERNEL_THIRD_PARTY_PATTERNS = [\n    r'.*portable/ThirdParty/GCC/Posix/port*',\n    r'.*portable/ThirdParty/*',\n    r'.*portable/IAR/AVR32_UC3/.*',\n    r'.*portable/GCC/AVR32_UC3/.*',\n]\nKERNEL_HEADER = [\n    '/*\\n',\n    ' * FreeRTOS Kernel <DEVELOPMENT BRANCH>\\n',\n    ' * Copyright (C) 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.\\n',",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "documentation": {}
+    },
+    {
+        "label": "KERNEL_HEADER",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "peekOfCode": "KERNEL_HEADER = [\n    '/*\\n',\n    ' * FreeRTOS Kernel <DEVELOPMENT BRANCH>\\n',\n    ' * Copyright (C) 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.\\n',\n    ' *\\n',\n    ' * SPDX-License-Identifier: MIT\\n',\n    ' *\\n',\n    ' * Permission is hereby granted, free of charge, to any person obtaining a copy of\\n',\n    ' * this software and associated documentation files (the \"Software\"), to deal in\\n',\n    ' * the Software without restriction, including without limitation the rights to\\n',",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "documentation": {}
+    },
+    {
+        "label": "FREERTOS_COPYRIGHT_REGEX",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "peekOfCode": "FREERTOS_COPYRIGHT_REGEX = r\"^(;|#)?( *(\\/\\*|\\*|#|\\/\\/))? Copyright \\(C\\) 20\\d\\d Amazon.com, Inc. or its affiliates. All Rights Reserved\\.( \\*\\/)?$\"\ndef main():\n    parser = HeaderChecker.configArgParser()\n    args   = parser.parse_args()\n    # Configure the checks then run\n    checker = HeaderChecker(KERNEL_HEADER,\n                            copyright_regex=FREERTOS_COPYRIGHT_REGEX,\n                            ignored_files=KERNEL_IGNORED_FILES,\n                            ignored_ext=KERNEL_IGNORED_EXTENSIONS,\n                            ignored_patterns=KERNEL_IGNORED_PATTERNS,",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.kernel_checker",
+        "documentation": {}
+    },
+    {
+        "label": "update_manifest_file",
+        "kind": 2,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "peekOfCode": "def update_manifest_file(new_version_number):\n    updated_lines = []\n    with open(MANIFEST_FILE, 'r') as f:\n        for line in f:\n            line = line.strip()\n            if line.startswith('version'):\n                updated_lines.append(f'version: \"v{new_version_number}\"\\n')\n            else:\n                updated_lines.append(f'{line}\\n')\n    with open(MANIFEST_FILE, 'w') as f:",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "documentation": {}
+    },
+    {
+        "label": "parse_args",
+        "kind": 2,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "peekOfCode": "def parse_args():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('-v', '--version', required=True, help='New version number.')\n    args = parser.parse_args()\n    return args\ndef main():\n    args = parse_args()\n    update_manifest_file(args.version)\nif __name__ == '__main__':\n    main()",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "peekOfCode": "def main():\n    args = parse_args()\n    update_manifest_file(args.version)\nif __name__ == '__main__':\n    main()",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "documentation": {}
+    },
+    {
+        "label": "THIS_FILE_PATH",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "peekOfCode": "THIS_FILE_PATH = os.path.dirname(os.path.abspath(__file__))\nMANIFEST_FILE = os.path.join(THIS_FILE_PATH, '..', '..', 'manifest.yml')\ndef update_manifest_file(new_version_number):\n    updated_lines = []\n    with open(MANIFEST_FILE, 'r') as f:\n        for line in f:\n            line = line.strip()\n            if line.startswith('version'):\n                updated_lines.append(f'version: \"v{new_version_number}\"\\n')\n            else:",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "documentation": {}
+    },
+    {
+        "label": "MANIFEST_FILE",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "description": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "peekOfCode": "MANIFEST_FILE = os.path.join(THIS_FILE_PATH, '..', '..', 'manifest.yml')\ndef update_manifest_file(new_version_number):\n    updated_lines = []\n    with open(MANIFEST_FILE, 'r') as f:\n        for line in f:\n            line = line.strip()\n            if line.startswith('version'):\n                updated_lines.append(f'version: \"v{new_version_number}\"\\n')\n            else:\n                updated_lines.append(f'{line}\\n')",
+        "detail": "FreeRTOS.FreeRTOS-Kernel..github.scripts.manifest_updater",
+        "documentation": {}
+    },
+    {
+        "label": "copy_files_in_dir",
+        "kind": 2,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "def copy_files_in_dir(src_abs_path, dst_abs_path):\n    if os.path.isfile(src_abs_path):\n        print('Src: {}'.format(src_abs_path))\n        print('Dst: {}\\n'.format(dst_abs_path))\n        shutil.copy2(src_abs_path, dst_abs_path)\n    else:\n        for src_file in os.listdir(src_abs_path):\n            src_file_abs_path = os.path.join(src_abs_path, src_file)\n            if os.path.isfile(src_file_abs_path) and src_file != 'ReadMe.txt':\n                if not os.path.exists(dst_abs_path):",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "copy_common_files_for_compiler_and_arch",
+        "kind": 2,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "def copy_common_files_for_compiler_and_arch(compiler, arch, src_paths, dst_path):\n    for src_path in src_paths:\n        src_abs_path = os.path.join(_THIS_FILE_DIRECTORY_, src_path)\n        dst_abs_path = os.path.join(_FREERTOS_PORTABLE_DIRECTORY_, compiler, arch, dst_path)\n        copy_files_in_dir(src_abs_path, dst_abs_path)\ndef copy_portable_files_for_compiler_and_arch(compiler, arch, src_paths, dst_path):\n    for src_path in src_paths[compiler][arch]:\n        src_abs_path = os.path.join(_THIS_FILE_DIRECTORY_, src_path)\n        dst_abs_path = os.path.join(_FREERTOS_PORTABLE_DIRECTORY_, compiler, arch, dst_path)\n        copy_files_in_dir(src_abs_path, dst_abs_path)",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "copy_portable_files_for_compiler_and_arch",
+        "kind": 2,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "def copy_portable_files_for_compiler_and_arch(compiler, arch, src_paths, dst_path):\n    for src_path in src_paths[compiler][arch]:\n        src_abs_path = os.path.join(_THIS_FILE_DIRECTORY_, src_path)\n        dst_abs_path = os.path.join(_FREERTOS_PORTABLE_DIRECTORY_, compiler, arch, dst_path)\n        copy_files_in_dir(src_abs_path, dst_abs_path)\ndef copy_files():\n    # Copy Secure Files\n    for compiler in _COMPILERS_:\n        for arch in _ARCH_S_:\n            copy_common_files_for_compiler_and_arch(compiler, arch, _SECURE_COMMON_FILE_PATHS_, 'secure')",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "copy_files",
+        "kind": 2,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "def copy_files():\n    # Copy Secure Files\n    for compiler in _COMPILERS_:\n        for arch in _ARCH_S_:\n            copy_common_files_for_compiler_and_arch(compiler, arch, _SECURE_COMMON_FILE_PATHS_, 'secure')\n            copy_portable_files_for_compiler_and_arch(compiler, arch, _SECURE_PORTABLE_FILE_PATHS_, 'secure')\n    # Copy Non-Secure Files\n    for compiler in _COMPILERS_:\n        for arch in _ARCH_NS_:\n            copy_common_files_for_compiler_and_arch(compiler, arch, _NONSECURE_COMMON_FILE_PATHS_, 'non_secure')",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "def main():\n    copy_files()\nif __name__ == '__main__':\n    main()",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "_THIS_FILE_DIRECTORY_",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "_THIS_FILE_DIRECTORY_ = os.path.dirname(os.path.realpath(__file__))\n_FREERTOS_PORTABLE_DIRECTORY_ = os.path.dirname(_THIS_FILE_DIRECTORY_)\n_COMPILERS_ = ['GCC', 'IAR']\n_ARCH_NS_ = ['ARM_CM85', 'ARM_CM85_NTZ', 'ARM_CM55', 'ARM_CM55_NTZ', 'ARM_CM35P', 'ARM_CM35P_NTZ', 'ARM_CM33', 'ARM_CM33_NTZ', 'ARM_CM23', 'ARM_CM23_NTZ']\n_ARCH_S_ = ['ARM_CM85', 'ARM_CM55', 'ARM_CM35P', 'ARM_CM33', 'ARM_CM23']\n# Files to be compiled in the Secure Project\n_SECURE_COMMON_FILE_PATHS_ = [\n    os.path.join('secure', 'context'),\n    os.path.join('secure', 'heap'),\n    os.path.join('secure', 'init'),",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "_FREERTOS_PORTABLE_DIRECTORY_",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "_FREERTOS_PORTABLE_DIRECTORY_ = os.path.dirname(_THIS_FILE_DIRECTORY_)\n_COMPILERS_ = ['GCC', 'IAR']\n_ARCH_NS_ = ['ARM_CM85', 'ARM_CM85_NTZ', 'ARM_CM55', 'ARM_CM55_NTZ', 'ARM_CM35P', 'ARM_CM35P_NTZ', 'ARM_CM33', 'ARM_CM33_NTZ', 'ARM_CM23', 'ARM_CM23_NTZ']\n_ARCH_S_ = ['ARM_CM85', 'ARM_CM55', 'ARM_CM35P', 'ARM_CM33', 'ARM_CM23']\n# Files to be compiled in the Secure Project\n_SECURE_COMMON_FILE_PATHS_ = [\n    os.path.join('secure', 'context'),\n    os.path.join('secure', 'heap'),\n    os.path.join('secure', 'init'),\n    os.path.join('secure', 'macros')",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "_COMPILERS_",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "_COMPILERS_ = ['GCC', 'IAR']\n_ARCH_NS_ = ['ARM_CM85', 'ARM_CM85_NTZ', 'ARM_CM55', 'ARM_CM55_NTZ', 'ARM_CM35P', 'ARM_CM35P_NTZ', 'ARM_CM33', 'ARM_CM33_NTZ', 'ARM_CM23', 'ARM_CM23_NTZ']\n_ARCH_S_ = ['ARM_CM85', 'ARM_CM55', 'ARM_CM35P', 'ARM_CM33', 'ARM_CM23']\n# Files to be compiled in the Secure Project\n_SECURE_COMMON_FILE_PATHS_ = [\n    os.path.join('secure', 'context'),\n    os.path.join('secure', 'heap'),\n    os.path.join('secure', 'init'),\n    os.path.join('secure', 'macros')\n]",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "_ARCH_NS_",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "_ARCH_NS_ = ['ARM_CM85', 'ARM_CM85_NTZ', 'ARM_CM55', 'ARM_CM55_NTZ', 'ARM_CM35P', 'ARM_CM35P_NTZ', 'ARM_CM33', 'ARM_CM33_NTZ', 'ARM_CM23', 'ARM_CM23_NTZ']\n_ARCH_S_ = ['ARM_CM85', 'ARM_CM55', 'ARM_CM35P', 'ARM_CM33', 'ARM_CM23']\n# Files to be compiled in the Secure Project\n_SECURE_COMMON_FILE_PATHS_ = [\n    os.path.join('secure', 'context'),\n    os.path.join('secure', 'heap'),\n    os.path.join('secure', 'init'),\n    os.path.join('secure', 'macros')\n]\n_SECURE_PORTABLE_FILE_PATHS_ = {",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "_ARCH_S_",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "_ARCH_S_ = ['ARM_CM85', 'ARM_CM55', 'ARM_CM35P', 'ARM_CM33', 'ARM_CM23']\n# Files to be compiled in the Secure Project\n_SECURE_COMMON_FILE_PATHS_ = [\n    os.path.join('secure', 'context'),\n    os.path.join('secure', 'heap'),\n    os.path.join('secure', 'init'),\n    os.path.join('secure', 'macros')\n]\n_SECURE_PORTABLE_FILE_PATHS_ = {\n    'GCC':{",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "_SECURE_COMMON_FILE_PATHS_",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "_SECURE_COMMON_FILE_PATHS_ = [\n    os.path.join('secure', 'context'),\n    os.path.join('secure', 'heap'),\n    os.path.join('secure', 'init'),\n    os.path.join('secure', 'macros')\n]\n_SECURE_PORTABLE_FILE_PATHS_ = {\n    'GCC':{\n        'ARM_CM23' :[os.path.join('secure', 'context', 'portable', 'GCC', 'ARM_CM23')],\n        'ARM_CM33' :[os.path.join('secure', 'context', 'portable', 'GCC', 'ARM_CM33')],",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "_SECURE_PORTABLE_FILE_PATHS_",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "_SECURE_PORTABLE_FILE_PATHS_ = {\n    'GCC':{\n        'ARM_CM23' :[os.path.join('secure', 'context', 'portable', 'GCC', 'ARM_CM23')],\n        'ARM_CM33' :[os.path.join('secure', 'context', 'portable', 'GCC', 'ARM_CM33')],\n        'ARM_CM35P':[os.path.join('secure', 'context', 'portable', 'GCC', 'ARM_CM33')],\n        'ARM_CM55' :[os.path.join('secure', 'context', 'portable', 'GCC', 'ARM_CM33')],\n        'ARM_CM85' :[os.path.join('secure', 'context', 'portable', 'GCC', 'ARM_CM33')]\n    },\n    'IAR':{\n        'ARM_CM23' :[os.path.join('secure', 'context', 'portable', 'IAR', 'ARM_CM23')],",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "_NONSECURE_COMMON_FILE_PATHS_",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "_NONSECURE_COMMON_FILE_PATHS_ = [\n    'non_secure'\n]\n_NONSECURE_PORTABLE_FILE_PATHS_ = {\n    'GCC':{\n        'ARM_CM23'      : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM23')],\n        'ARM_CM23_NTZ'  : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM23_NTZ')],\n        'ARM_CM33'      : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM33')],\n        'ARM_CM33_NTZ'  : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM33_NTZ')],\n        'ARM_CM35P'     : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM33', 'portasm.c'),",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    },
+    {
+        "label": "_NONSECURE_PORTABLE_FILE_PATHS_",
+        "kind": 5,
+        "importPath": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "description": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "peekOfCode": "_NONSECURE_PORTABLE_FILE_PATHS_ = {\n    'GCC':{\n        'ARM_CM23'      : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM23')],\n        'ARM_CM23_NTZ'  : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM23_NTZ')],\n        'ARM_CM33'      : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM33')],\n        'ARM_CM33_NTZ'  : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM33_NTZ')],\n        'ARM_CM35P'     : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM33', 'portasm.c'),\n                           os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM33', 'mpu_wrappers_v2_asm.c'),\n                           os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM35P', 'portmacro.h')],\n        'ARM_CM35P_NTZ' : [os.path.join('non_secure', 'portable', 'GCC', 'ARM_CM33_NTZ', 'portasm.c'),",
+        "detail": "FreeRTOS.FreeRTOS-Kernel.portable.ARMv8M.copy_files",
+        "documentation": {}
+    }
+]
